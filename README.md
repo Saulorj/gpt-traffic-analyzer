@@ -1,5 +1,11 @@
 <p align="center">
-  <img src="A_digital_graphic_design_banner_for_&quot;GPT_Traffic_A.png" width="100%" alt="GPT Traffic Analyzer — Powered by Saulo & Gatona">
+  <img src="https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/License-MIT-green">
+  <img src="https://img.shields.io/badge/Powered_by-Gatona💜-purple">
+</p>
+
+<p align="center">
+  <img src="banner.png" width="100%" alt="GPT Traffic Analyzer — Powered by Saulo & Gatona">
 </p>
 
 <p align="center">
