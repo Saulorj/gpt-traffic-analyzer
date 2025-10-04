@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  🌍 <b>Read this in:</b> 
+  🌍 <b>Read this in:</b>
   <a href="https://github.com/saulorj/gpt-traffic-analyzer/blob/main/README_PT-BR.md">🇧🇷 Português</a> |
   <a href="https://github.com/saulorj/gpt-traffic-analyzer/blob/main/README_EN.md">🇺🇸 English</a>
 </p>
@@ -24,14 +24,14 @@
 ---
 
 ## ✨ Features
-- 🧼 Clean terminal output  
-- 🌈 Colorful progress bars with live ping  
-- 🧭 Top progress bar for total time  
-- 🌀 Fancy mode with animated spinner  
-- 📊 PDF reports with charts and scores  
-- 🧠 Smart diagnostics (0–10 rating)  
-- 🎮 Suitability for streaming, video calls, and gaming  
-- 🗃️ CSV history and trend chart  
+- 🧼 Clean terminal output
+- 🌈 Colorful progress bars with live ping
+- 🧭 Top progress bar for total time
+- 🌀 Fancy mode with animated spinner
+- 📊 PDF reports with charts and scores
+- 🧠 Smart diagnostics (0–10 rating)
+- 🎮 Suitability for streaming, video calls, and gaming
+- 🗃️ CSV history and trend chart
 - 🌐 Tests Google & Cloudflare (plus optional hosts)
 
 ---
@@ -73,8 +73,24 @@ python -m gpt_traffic_analyzer.analyzer --duration 30m --hosts "API=api.mysite.c
 
 ---
 
+## ▶️ Usage Examples
+```bash
+python main.py --host 8.8.8.8 --count 50 --interval 0.2 --lang pt
+python main.py --host google.com --count 60 --save-csv results.csv --lang en
+```
+
+## 🧪 Run Tests
+```bash
+pytest -v
+```
+
+## 🧠 Notes
+- On Windows, ping interval cannot be controlled precisely.
+- On Linux/macOS, use `sudo` if ping requires privileges.
+- PDF and charts are saved automatically in the working directory.
+
 ## 🧠 Diagnostics
-- Calculates a 0–10 score based on latency, jitter, and packet loss.  
+- Calculates a 0–10 score based on latency, jitter, and packet loss.
 - Indicates if the connection is suitable for:
   - 🎬 Streaming
   - 🎥 Video calls
@@ -92,8 +108,8 @@ python -m gpt_traffic_analyzer.analyzer --duration 30m --hosts "API=api.mysite.c
 ---
 
 ## 💜 Credits
-👨‍💻 **Saulo** — Developer  
-🤖 **Gatona (ChatGPT - GPT‑5)** — Technical assistant  
+👨‍💻 **Saulo** — Developer
+🤖 **Gatona (ChatGPT - GPT‑5)** — Technical assistant
 
 ---
 

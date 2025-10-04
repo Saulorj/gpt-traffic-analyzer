@@ -1,0 +1,43 @@
+name: 🧪 Tests & PDF Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.11, 3.12]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests with pytest
+        run: pytest -v
+
+      - name: Run PDF generation (PT)
+        run: python main.py --host 8.8.8.8 --count 5 --interval 0.1 --lang pt
+
+      - name: Run PDF generation (EN)
+        run: python main.py --host 1.1.1.1 --count 5 --interval 0.1 --lang en
+
+      - name: Upload generated PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-reports
+          path: "*.pdf"

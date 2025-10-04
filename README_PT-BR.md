@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  🌍 <b>Leia em:</b> 
+  🌍 <b>Leia em:</b>
   <a href="https://github.com/saulorj/gpt-traffic-analyzer/blob/main/README_PT-BR.md">🇧🇷 Português</a> |
   <a href="https://github.com/saulorj/gpt-traffic-analyzer/blob/main/README_EN.md">🇺🇸 English</a>
 </p>
@@ -19,20 +19,20 @@
 
 # 🚦 GPT Traffic Analyzer — Powered by Saulo & Gatona 💜
 
-O **GPT Traffic Analyzer** é uma ferramenta avançada em Python para analisar a estabilidade da sua conexão de internet.  
+O **GPT Traffic Analyzer** é uma ferramenta avançada em Python para analisar a estabilidade da sua conexão de internet.
 Ele mede **ping**, **jitter** e **perda de pacotes**, gerando um relatório **PDF profissional** com gráficos, diagnósticos e histórico automático.
 
 ---
 
 ## ✨ Recursos
-- 🧼 Terminal limpo e interface agradável  
-- 🌈 Barras de progresso coloridas com ping em tempo real  
-- 🧭 Barra geral superior com progresso total  
-- 🌀 Modo `--fancy` com spinner animado  
-- 📊 Relatório PDF com gráficos e notas  
-- 🧠 Diagnóstico inteligente (nota 0–10)  
-- 🎮 Avaliação para streaming, videoconferência e jogos  
-- 🗃️ Histórico CSV e painel de tendência  
+- 🧼 Terminal limpo e interface agradável
+- 🌈 Barras de progresso coloridas com ping em tempo real
+- 🧭 Barra geral superior com progresso total
+- 🌀 Modo `--fancy` com spinner animado
+- 📊 Relatório PDF com gráficos e notas
+- 🧠 Diagnóstico inteligente (nota 0–10)
+- 🎮 Avaliação para streaming, videoconferência e jogos
+- 🗃️ Histórico CSV e painel de tendência
 - 🌐 Google e Cloudflare sempre inclusos (mais hosts opcionais)
 
 ---
@@ -57,7 +57,21 @@ python -m gpt_traffic_analyzer.analyzer
 ```bash
 python -m gpt_traffic_analyzer.analyzer --duration 30m --hosts "API=api.meusite.com" --ping-alert 100 --fancy
 ```
+## ▶️ Exemplos de uso
+```bash
+python main.py --host 8.8.8.8 --count 50 --interval 0.2 --lang pt
+python main.py --host google.com --count 60 --save-csv results.csv --lang en
+```
 
+## 🧪 Rodar os testes
+```bash
+pytest -v
+```
+
+## 🧠 Notes
+- On Windows, ping interval cannot be controlled precisely.
+- On Linux/macOS, use `sudo` if ping requires privileges.
+- PDF and charts are saved automatically in the working directory.
 ---
 
 ## 🧩 Parâmetros
@@ -75,7 +89,7 @@ python -m gpt_traffic_analyzer.analyzer --duration 30m --hosts "API=api.meusite.
 ---
 
 ## 🧠 Diagnóstico
-- Calcula nota 0–10 com base em ping, jitter e perda.  
+- Calcula nota 0–10 com base em ping, jitter e perda.
 - Mostra se a conexão é adequada para:
   - 🎬 Streaming
   - 🎥 Videoconferência
@@ -93,8 +107,8 @@ python -m gpt_traffic_analyzer.analyzer --duration 30m --hosts "API=api.meusite.
 ---
 
 ## 💜 Créditos
-👨‍💻 **Saulo** — Desenvolvedor  
-🤖 **Gatona (ChatGPT - GPT‑5)** — Assistente técnica  
+👨‍💻 **Saulo** — Desenvolvedor
+🤖 **Gatona (ChatGPT - GPT‑5)** — Assistente técnica
 
 ---
 
