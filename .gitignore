@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+*.png
+*.pdf
+GPT Traffic Analyzer.csv
+.env
